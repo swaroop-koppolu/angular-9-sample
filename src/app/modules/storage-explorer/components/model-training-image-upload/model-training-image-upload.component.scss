@@ -1,0 +1,52 @@
+
+.active {
+    ::ng-deep {
+      .ui-card-shadow {
+        background: transparent;
+        box-shadow: unset;
+        outline: 1px dashed lightgray;
+        -webkit-transition: outline 200ms ease-out, background 200ms ease-out, box-shadow 200ms ease-out !important;
+        -moz-transition: outline 200ms ease-out, background 200ms ease-out, box-shadow 200ms ease-out !important;
+        -ms-transition: outline 200ms ease-out, background 200ms ease-out, box-shadow 200ms ease-out !important;
+        -o-transition: outline 200ms ease-out, background 200ms ease-out, box-shadow 200ms ease-out !important;
+        transition: outline 200ms ease-out, background 200ms ease-out, box-shadow 200ms ease-out !important;
+  
+  
+        .ui-card-header,
+        .ui-card-body,
+        .ui-card-footer {
+          opacity: 0;
+          -webkit-transition: opacity 200ms ease-out !important;
+          -moz-transition: opacity 200ms ease-out !important;
+          -ms-transition: opacity 200ms ease-out !important;
+          -o-transition: opacity 200ms ease-out !important;
+          transition: opacity 200ms ease-out !important;
+        }
+      }
+    }
+  }
+  
+  .p-card-container {
+    cursor: pointer;
+  
+    ::ng-deep {
+      .ui-card-shadow {
+        -webkit-transition: outline 200ms ease-out, background 200ms ease-out, box-shadow 200ms ease-out;
+        -moz-transition: outline 200ms ease-out, background 200ms ease-out, box-shadow 200ms ease-out;
+        -ms-transition: outline 200ms ease-out, background 200ms ease-out, box-shadow 200ms ease-out;
+        -o-transition: outline 200ms ease-out, background 200ms ease-out, box-shadow 200ms ease-out;
+        transition: outline 200ms ease-out, background 200ms ease-out, box-shadow 200ms ease-out;
+  
+  
+        .ui-card-header,
+        .ui-card-body,
+        .ui-card-footer {
+          -webkit-transition: opacity 200ms ease-out;
+          -moz-transition: opacity 200ms ease-out;
+          -ms-transition: opacity 200ms ease-out;
+          -o-transition: opacity 200ms ease-out;
+          transition: opacity 200ms ease-out;
+        }
+      }
+    }
+  }

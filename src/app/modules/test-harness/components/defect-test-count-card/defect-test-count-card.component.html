@@ -1,0 +1,38 @@
+<p-card  [style]="{'margin':'10px','width':'490px'}">
+    <p-header>
+      <div style="width:100%;background-color:yellowgreen;height:25px"><h3>Defect Info</h3></div>
+    </p-header>
+    <div class="ui-grid">
+      <div class="ui-grid-row">
+        <div class="ui-grid-col-6 label" >Name:</div>
+        <div class="ui-grid-col-6">{{defectCopy.Name}}</div>
+      </div>
+      <div class="ui-grid-row">
+        <div class="ui-grid-col-6 label" >Description:</div>
+        <div class="ui-grid-col-6">{{defectCopy.Description}}</div>
+      </div>
+      <div class="ui-grid-row">
+        <div class="ui-grid-col-6 label" >Code:</div>
+        <div class="ui-grid-col-6">{{defectCopy.Code}}</div>
+      </div>
+      <div class="ui-grid-row">
+        <div class="ui-grid-col-6 label" >Priority:</div>
+        <div class="ui-grid-col-6">{{defectCopy.Priority}}</div>
+      </div>
+      <div class="ui-grid-row">
+        <div class="ui-grid-col-6 label">Cwr:</div>
+        <div class="ui-grid-col-6">{{defectCopy.IsCwr}}</div>
+      </div>
+      <div class="ui-grid-row">
+        <div class="ui-grid-col-6 label">Class:</div>
+        <div class="ui-grid-col-6">{{defectCopy.Class}}</div>
+      </div>
+      <div class="ui-grid-row">
+        <div class="ui-grid-col-6 label" >Count:</div>
+        <div class="ui-grid-col-6">
+           <input type="text" pInputText pKeyFilter="int"  [formControl]= "defectCount">
+        </div>
+      </div>
+    </div>
+  
+  </p-card>

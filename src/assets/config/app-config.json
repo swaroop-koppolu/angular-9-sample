@@ -1,0 +1,93 @@
+{
+    "env": "dev",
+    "envPlatform": "local",
+    "adalConfig": {
+      "tenant": "0e1609b0-5e7f-4722-8611-c7f3067cebdc",
+      "clientId": "56ae71aa-95db-4892-8e0b-695127a9b32a",
+      "navigateToLoginRequestUrl": false,
+      "cacheLocation": "sessionStorage"
+    },
+    "appInsights": {
+      "instrumentationKey": "743e7aa7-ca53-4f97-b127-769f8a8e4e85",
+      "enableAutoRouteTracking": true
+    },
+    "thorPortalApi": {
+      "baseUrl": "http://localhost:4549/api",
+      "endPoints": {
+        "cleanUp": "/cleanUp",
+        "getComputeNodeDetails": "/all/details",
+        "computeNode": "/computeNode",
+        "initiateRun": "/initiateRun",
+        "terminateRun": "/terminateRun",
+        "latestLogs": "/logs/latest",
+        "getFileConent": "/files/content",
+        "getFileList": "/files/list/all",
+        "getCurrentRun": "/run/current",
+        "getComputeNodeStatus": "/all/status",
+        "saveConfigFiles": "/files/config/save",
+        "getRunHistory": "/run/history",
+        "saveRunHistory": "/run/history/save",
+        "getRaspberryPiStatus": "/raspberrypi/status",
+        "restartRaspberryPi": "/raspberrypi/restart"
+      }
+    },
+    "inventoryApi": {
+      "baseUrl": "",
+      "endPoints": {
+        "getAssetsAsync": "/assets?code=EIoLudYkgnRNfgz0V42raRKitK33l58zPKCPzWubnRbFMxZYrd8saA==",
+        "getAssetTypesAsync": "/assettypes?code=6ojIdwH1obmSbuVC88a9thXPd6AGIg4faW1OkuZasdDHrM4GaxaRtw==",
+        "getAssetSubTypesAsync": "/assetsubtypes?code=LhsUYqZ/nWZmbn4iiIroXJIxFsP8oAEwuwX8CG/QgV/HwAOi0oqCEQ==",
+        "getFalsePositiveCategoriesAsync": "/falsepositivecategories?code=uTEnZ1AffOrT8EIba9XTYl9Jk6HoQUAU9LOmAvww/eNCxQh2l0Bb2A==",
+        "getDefectCodesAsync": "/defectcodes?code=gH0Rf3KHalMGhfplfB7/kX8RQ/p0QUsimyXBEagyxkHJGUXyjmUtAg==",
+        "getDefectPrioritiesAsync": "/defectpriorities?code=eFC1uBm5/ReaJSaKbPpHXB/rzGqz47ph34u3XqzQvLNGY8WbWBda4A==",
+        "saveAssetAsync": "/assets/save?code=qRKxO2RP56LsN1mTlbMMXh9UNlBRoB0sw8Y63O/nvI9E8qvPPyuoYg==",
+        "submitAssetAsync": "/assets/submit?code=Ch7ao82Wyd/YBaP5jIGTb8V9uAAm55BKWbOil1u3AEan0sZBJW0DCw==",
+        "toggleLockAsync": "/assets/togglelock?code=w5Yh1oEu2tuYhxXO8YAcksIndOMrdxwf6UnhXU2mgsNQxqcQGRthFw==",
+        "getRemedialActions": "/remedialActions?code=Qn0xzIE4T2eRUQlMDrCaCBcfNTlLqEymNI1aeryDA80kkpVujmgLrw=="
+      }
+    },
+    "manualDefectApi": {
+      "baseUrl":"",
+      "endPoints": {
+        "submitDefect": "/manualdefects/save?code=VxayhNLpZ3aQ4MgPyqrV2eg/0FK2XEsy8DSwMNKuuFfKXYB1JEorbg==",
+        "getAllDefects": "/manualdefects?code=yAMwRSzQZIG08k2U2qkVC3oRXnTMZzsguURxsl044PEWylQ7HrxlJA==",
+        "getDefectById": "/manualdefect/{{defectId}}?code=cy7K5CJivTGTjzKGeADrnUlmHWTNw/VPpa6HBh7U1MON5lcTIPGrUA==",
+        "getDefectByAssetId": ""
+      }
+    },
+    "imageTrainingApi": {
+      "baseUrl": "",
+      "endPoints": {
+        "uploadToImageTraining": "/ImageTraining?code=bEW8NeEz1ZC0YVoa4KvNZnj8IxpumdRQosTubXnKmD/59LUToaHkWg=="
+      }
+    },
+    "systemMonitorApi": {
+      "baseUrl": "http://localhost:4646/api",
+      "endPoints": {
+        "computeNodeStatus": "/status/computeNode",
+        "getLastLocation": "/location/last"
+      }
+    },
+    "testHarnessApi": {
+      "baseUrl": "http://localhost:55854/api",
+      "endPoints": {
+        "getTestCasesForJoints": "/TestHarness/TestCasesForJoints",
+        "submitTestCasesForJoints": "/TestHarness/PrepareImages"
+      }
+    },
+    "imageMetadataSearchApi": {
+      "baseUrl": "",
+      "headerApiKey": "api-key",
+      "headerApiValue": "FD963DDAE3B7E8D94AD51437E4771E72",
+      "endPoints": {
+        "getMetadata": "/indexes/image-metadata-idx/docs/search?api-version=2019-05-06"
+      }
+    },
+    "imageSearchApi": {
+      "baseUrl":"",
+      "endPoints": {
+        "getImages": "/images?code=/tKXd7fBYUAvXPYDhkBR1HDL2dFaEBSTay0WwGZg/Zg3NQpQbpb70Q=="
+      }
+    }
+  }
+  

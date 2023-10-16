@@ -1,0 +1,20 @@
+<div class="p-grid">
+    <div class="p-col-12">
+      <p-fileUpload #fileUploadEl name="files[]" multiple="multiple" accept="image/png" (uploadHandler)="upload($event)" [showUploadButton]="true" customUpload="true">
+        <ng-template pTemplate="toolbar">
+          <div *ngIf="progressPercentage > 0 && progressPercentage < 100">
+            <p-progressBar [value]="progressPercentage"></p-progressBar>
+          </div>
+        </ng-template>
+        <ng-template pTemplate="content">
+          <!-- <app-file-template [config]="successFileTemplateConfig"></app-file-template>
+          <app-file-template [config]="failedFileTemplateConfig"></app-file-template> -->
+ 
+          <div *ngIf="!filesFailedToUpload?.length && !filesSuccessfullyUploaded?.length && fileUploadEl.files?.length === 0">
+            <div *ngFor="let i of Array(4).fill(1)" class="empty-box"></div>
+            <div class="no-files-message">Click "Choose" to select files to upload. You can also drag & drop images here.</div>
+          </div>
+        </ng-template>
+      </p-fileUpload>
+    </div>
+  </div>

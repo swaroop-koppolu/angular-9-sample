@@ -1,0 +1,1 @@
+export * from "./filter-template-config.model";

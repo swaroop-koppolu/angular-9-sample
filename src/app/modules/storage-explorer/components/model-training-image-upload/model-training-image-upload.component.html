@@ -1,0 +1,19 @@
+<div class="p-grid">
+    <div class="p-col-12">
+      <h1 id="bulkdata-subheader" class="mdc-typography--subtitle2">ML Model Management</h1>
+      <h1 id="bulkdata-header" class="mdc-typography--headline5">Image Upload</h1>
+    </div>
+    <div class="p-col-12">
+      <div class="p-card-container" [ngClass]="{ 'active': isOpen() }">
+        <p-card header="Cogniac Image Upload" subheader="Train models by uploading images" [style]="{width: '360px'}" styleClass="ui-card-shadow" (click)="openModelTraining()">
+          <p-header>
+            <!-- <img src="Card" src="assets/showcase/images/usercard.png"> -->
+          </p-header>
+          <div>To upload an image for Cogniac model training, click "Start" below.</div>
+          <p-footer>
+            <button pButton type="button" label="Start"></button>
+          </p-footer>
+        </p-card>
+      </div>
+    </div>
+  </div>

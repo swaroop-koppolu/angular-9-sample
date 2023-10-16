@@ -1,0 +1,19 @@
+/* You can add global styles to this file, and also import other style files */
+.testHornessAccordianContainer {
+    .ui-accordion {
+      .ui-accordion-header {
+        span.ui-accordion-toggle-icon {
+          float: right;;
+        }
+      }
+    }
+  }
+  :host {
+    ::ng-deep .ui-chkbox {
+      .ui-chkbox-box{
+        width: 50px !important;
+        height: 50px !important;
+      }
+    }    
+}
+

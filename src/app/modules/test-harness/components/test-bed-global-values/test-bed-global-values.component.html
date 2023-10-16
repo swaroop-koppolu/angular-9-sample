@@ -1,0 +1,25 @@
+<div class="p-grid">
+    <div class="p-col-12">
+      <form [formGroup]="model">
+        <p-card styleClass="ui-card-shadow" [style]="{'background-color': 'smokewhite'}">
+          <p-header>
+            <h3 style="background-color:lightgrey;widows: 100%;padding:10px;">Global Settings</h3>
+          </p-header>
+          <div class="p-grid">
+            <div class="p-col-4 ui-fluid">
+              <span class="label">*Name: &nbsp;</span>
+              <input pInputText formControlName="Name" >
+            </div>
+            <div class="p-col-4 ui-fluid">
+              <span class="label">*Cameras</span>
+              <p-multiSelect [filter]="false" name="cameras" [options]="cameras" formControlName="CameraIds" [panelStyle]="{minWidth:'12em'}"></p-multiSelect>
+            </div>
+            <div class="p-col-4 ui-fluid">
+              <span class="label">*Image file path</span>
+              <input pInputText name="filePath" formControlName="SampleImagePath">
+            </div>
+          </div>
+        </p-card>
+      </form>
+    </div>
+  </div>

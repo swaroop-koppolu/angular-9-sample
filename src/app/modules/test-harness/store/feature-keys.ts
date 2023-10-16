@@ -1,0 +1,6 @@
+export const testBedGlobalFeatureKey="testBedGlobal"
+export const testHarnessContainerFeatureKey="testHarnessContainer"
+export const testHarnessBarTypeSelectionFeatureKey="testHarnessBarTypeSelection"
+
+
+export const testHarnessFeatureKey="testHarness"

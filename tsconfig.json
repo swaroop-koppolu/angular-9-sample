@@ -1,0 +1,47 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "baseUrl": "./",
+    "paths": {
+     // "@bulk-data-viewer/*": ["src/app/modules/bulk-data-viewer/*"],
+     "@test-harness/*": ["src/app/modules/test-harness/*"],
+    //  "@test-harness123/*": ["src/app/modules/test-harness123/*"],
+    //  "@inventory/*": ["src/app/modules/inventory/*"],
+    //  "@control-panel/*": ["src/app/modules/control-panel/*"],
+     // "@defect-management/*": ["src/app/modules/defect-management/*"],
+      "@storage-explorer/*": ["src/app/modules/storage-explorer/*"],
+    //  "@home/*": ["src/app/modules/home/*"],
+     "@shared/*": ["src/app/modules/shared/*"],
+    //  "@core/*": ["src/app/modules/core/*"],
+      "@modules/*": ["src/app/modules/*"],
+      "@appConfig": ["src/app/app.config"],
+      "@environment": ["src/environments/environment"],
+      "@app/*": ["src/app/*"],
+      "@src/*": ["src/*"],
+    },
+    "outDir": "./dist/out-tsc",
+    "sourceMap": true,
+    "declaration": false,
+    "downlevelIteration": true,
+    "experimentalDecorators": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "importHelpers": true,
+    "target": "es2015",
+    "typeRoots": [
+      "node_modules/@types"
+    ],
+    "lib": [
+      "es2018",
+      "dom"
+    ]
+  },
+  "exclude": [
+    "test.ts",
+    "**/*.spec.ts"
+  ],
+  "angularCompilerOptions": {
+    "fullTemplateTypeCheck": true,
+    "strictInjectionParameters": true
+  }
+}
